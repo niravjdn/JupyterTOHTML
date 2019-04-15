@@ -1,0 +1,30 @@
+<!-- howdy/templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Jupyter to HTML</title>
+    {% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+<script src="{% static 'script.js' %}"></script>
+</head>
+<body>
+
+<div class="center">
+
+    <h1>Jupyter Notebook to HTML</h1>
+    <h2>By <a class="linkedInLink" href="https://www.linkedin.com/in/niravjdn/">Nirav Patel</a> </h2>
+
+<form action="#">
+    <div class="input-file-container">
+        <input class="input-file" id="my-file" type="file">
+        <label tabindex="0" for="my-file" class="input-file-trigger">Select a file...</label>
+    </div>
+    <p class="file-return"></p>
+</form>
+
+<p class="txtcenter">You can upload single notebook or zip containing notebooks.</p>
+</div>
+</body>
+</html>
