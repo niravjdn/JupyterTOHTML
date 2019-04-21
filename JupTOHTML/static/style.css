@@ -27,6 +27,13 @@
   color: #39D2B4;
 }
 
+.btn:hover + .btn,
+.btn:focus + .btn, .js .btn-trigger:hover,
+.btn:focus {
+  background: #34495E;
+  color: #39D2B4;
+}
+
 .file-return {
   margin: 0;
 }
@@ -99,4 +106,22 @@ h2 + P {
 a.linkedInLink{
     color: #1ABC9C;
     text-decoration: none;
+}
+
+#btn-submit{
+  padding: 20px;
+  margin: 0px;
+  background: #1ABC9C;
+  color: #39D2B4;
+  font-style: normal;
+  font-weight: normal;
+  color: #fff;
+  border: 0;
+  min-width: 221px;
+  font-size: 20px;
+}
+
+#btn-submit:hover{
+  background-color: #7F8C9A;
+  color: #1ABC9C;
 }

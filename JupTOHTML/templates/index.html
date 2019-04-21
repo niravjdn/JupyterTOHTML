@@ -16,15 +16,27 @@
     <h1>Jupyter Notebook to HTML</h1>
     <h2>By <a class="linkedInLink" href="https://www.linkedin.com/in/niravjdn/">Nirav Patel</a> </h2>
 
-<form action="#">
+<form method="post" action="" enctype="multipart/form-data">
+     {% csrf_token %}
     <div class="input-file-container">
-        <input class="input-file" id="my-file" type="file">
+        <input class="input-file" name="uploadedFile" id="my-file" type="file">
         <label tabindex="0" for="my-file" class="input-file-trigger">Select a file...</label>
     </div>
+    <br>
+    <div class="input-file-container">
+        <input class="btn" name="uploadedFile" id="btn-submit" type="submit" value="Convert">
+    </div>
+
+
     <p class="file-return"></p>
 </form>
 
-<p class="txtcenter">You can upload single notebook or zip containing notebooks.</p>
+<p class="txtcenter">You can upload Jupyter Notebook to convert it into HTML.</p>
 </div>
 </body>
+{% if FIleInDownload %}
+        <script>
+        window.open('/app/download/?file_name={{ FIleInDownload }}');
+        </script>
+ {% endif %}
 </html>
