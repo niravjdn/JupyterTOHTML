@@ -1,5 +1,5 @@
 # JupyterTOHTML
-This is a simple django app that converts Jupyter notebooks to HTML. 
+This is a simple web app developed in django app which converts Jupyter notebooks to HTML. 
 
 ## Demo
 https://juptohtml.herokuapp.com/app
